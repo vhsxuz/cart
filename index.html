@@ -4,58 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cartly Store</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="brand">Cartly</div>
-      <div class="nav-links">
-        <a href="#products">Products</a>
-        <a href="#cart">Cart <span id="cart-count">0</span></a>
-      </div>
-    </nav>
-
-    <header class="hero">
-      <div>
-        <p class="eyebrow">Curated essentials</p>
-        <h1>Shop smarter with a faster cart.</h1>
-        <p class="hero-copy">
-          Browse a polished product catalog, search instantly, and add your favorites to the cart.
-        </p>
-      </div>
-      <div class="search-card">
-        <label for="search-input">Search products</label>
-        <input id="search-input" type="search" placeholder="Try “lamp” or “desk”" />
-      </div>
-    </header>
-
-    <main class="main-layout">
-      <section id="products" class="products-section">
-        <div class="section-heading">
-          <h2>Featured products</h2>
-          <p>Pick from a small premium collection.</p>
-        </div>
-        <div id="product-grid" class="product-grid"></div>
-      </section>
-
-      <aside id="cart" class="cart-panel">
-        <div class="cart-header">
-          <h2>Your cart</h2>
-          <span id="cart-total">0 items</span>
-        </div>
-        <div id="cart-items" class="cart-items"></div>
-        <div class="cart-footer">
-          <div class="summary-row">
-            <span>Subtotal</span>
-            <strong id="subtotal">$0.00</strong>
-          </div>
-          <button id="checkout-button" class="checkout-button">Checkout</button>
-        </div>
-      </aside>
-    </main>
-
-    <div id="toast" class="toast" aria-live="polite"></div>
-
-    <script type="module" src="src/app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
